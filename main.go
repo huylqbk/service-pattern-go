@@ -2,6 +2,8 @@ package main
 
 import (
 	"database/sql"
+	"encoding/json"
+	"fmt"
 	"net/http"
 	"sync"
 
@@ -13,6 +15,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Service is running at", 8080)
 	http.ListenAndServe(":8080", ChiRouter().InitRouter())
 }
 
@@ -28,6 +31,10 @@ func (router *router) InitRouter() *chi.Mux {
 
 	r := chi.NewRouter()
 	r.HandleFunc("/getScore/{player1}/vs/{player2}", playerController.GetPlayerScore)
+	r.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) {
+		mess := map[string]interface{}{"success": true}
+		json.NewEncoder(w).Encode(mess)
+	})
 
 	return r
 }
