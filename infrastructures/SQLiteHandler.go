@@ -3,7 +3,7 @@ package infrastructures
 import (
 	"database/sql"
 	"fmt"
-	"github.com/irahardianto/service-pattern-go/interfaces"
+	"github.com/huylqbk/service-pattern-go/interfaces"
 )
 
 type SQLiteHandler struct {
@@ -20,7 +20,7 @@ func (handler *SQLiteHandler) Query(statement string) (interfaces.IRow, error) {
 
 	if err != nil {
 		fmt.Println(err)
-		return new(SqliteRow),err
+		return new(SqliteRow), err
 	}
 	row := new(SqliteRow)
 	row.Rows = rows
@@ -38,7 +38,7 @@ func (r SqliteRow) Scan(dest ...interface{}) error {
 		return err
 	}
 
-	return  nil
+	return nil
 }
 
 func (r SqliteRow) Next() bool {

@@ -3,8 +3,8 @@ package services
 import (
 	"testing"
 
-	"github.com/irahardianto/service-pattern-go/interfaces/mocks"
-	"github.com/irahardianto/service-pattern-go/models"
+	"github.com/huylqbk/service-pattern-go/interfaces/mocks"
+	"github.com/huylqbk/service-pattern-go/models"
 
 	"github.com/stretchr/testify/assert"
 )

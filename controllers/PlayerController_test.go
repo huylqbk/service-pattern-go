@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http/httptest"
 
-	"github.com/irahardianto/service-pattern-go/interfaces/mocks"
-	"github.com/irahardianto/service-pattern-go/viewmodels"
+	"github.com/huylqbk/service-pattern-go/interfaces/mocks"
+	"github.com/huylqbk/service-pattern-go/viewmodels"
 
 	"testing"
 

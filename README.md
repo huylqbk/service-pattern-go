@@ -30,7 +30,7 @@ Get Started:
 
 Clone the source
 
-    git clone https://github.com/irahardianto/service-pattern-go
+    git clone https://github.com/huylqbk/service-pattern-go
 
 Setup dependencies
 

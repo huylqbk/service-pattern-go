@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/irahardianto/service-pattern-go/interfaces"
+	"github.com/huylqbk/service-pattern-go/interfaces"
 
 	"github.com/go-chi/chi"
-	"github.com/irahardianto/service-pattern-go/viewmodels"
+	"github.com/huylqbk/service-pattern-go/viewmodels"
 )
 
 type PlayerController struct {
